@@ -12,8 +12,8 @@ app.use(express.static('public'));
 const transporter = nodemailer.createTransport({
     service: 'gmail', // You can use other services like Yahoo, Outlook, etc.
     auth: {
-        user: 'your-email@gmail.com', // Replace with your email
-        pass: 'your-email-password'   // Replace with your email password or app-specific password
+        user: 'ankityadav9621503357@gmail.com', // Replace with your email
+        pass: 'cpbh masv qsuh evsi'  // Replace with your email password or app-specific password
     }
 });
 
@@ -38,8 +38,8 @@ app.post('/contact', [
     console.log('Message:', message);
 
     const mailOptions = {
-        from: 'your-email@gmail.com', // Sender address
-        to: 'your-email@gmail.com',   // List of recipients
+        from: 'ankityadav9621503357@gmail.com', // Sender address
+        to: 'shreekrishnapgboys@gmail.com',   // List of recipients
         subject: 'New Contact Form Submission', // Subject line
         text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}` // Plain text body
     };
